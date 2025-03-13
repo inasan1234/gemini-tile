@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   namespace :api do
+    post 'gemini/fetch_data', to: 'gemini#fetch_data'
     get "health_check", to: 'health_check#index'
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
